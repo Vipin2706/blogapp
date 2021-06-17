@@ -1,0 +1,26 @@
+<%- include("header") -%>
+
+<!-- create a form having 2 input box and a submit  start now | -->
+<form action="/compose" method="POST">
+    <h1>New Blog</h1>
+  <div class="form-group">
+    <input
+      class="form-control"
+      type="text text-center"
+      placeholder="title"
+      name="BlogTitle"
+    />
+  </div>
+  <div class="form-group">
+    <textarea
+      class="form-control"
+      type="text"
+      placeholder="content"
+      name="BlogContent"
+    ></textarea>
+  </div>
+
+  <button class="btn btn-success btn-lg" type="submit">Submit</button>
+</form>
+
+<%- include("footer") -%>
